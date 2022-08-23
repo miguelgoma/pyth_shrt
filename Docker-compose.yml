@@ -1,0 +1,9 @@
+version:'3'
+services:
+	short_app:
+		build: .
+		container_name:"short-app-container"
+		ports:
+		   - "8000:15400"
+		volumes:
+		   - ./app/:/app
